@@ -1,16 +1,16 @@
 import React, { Component } from 'react'
 import axios from 'axios'
 
-class HangoutsContainer extends Component {
+class TripsContainer extends Component {
   constructor(props) {
     super(props)
     this.state = {
-      hangouts: []
+      trips: []
     }
   }
 
   componentDidMount() {
-  axios.get('http://localhost:3001/api/v1/hangouts.json')
+  axios.get('http://localhost:3001/api/v1/trips.json')
   .then(response => {
     console.log(response)
     this.setState({ideas: response.data})
@@ -21,10 +21,10 @@ class HangoutsContainer extends Component {
   render() {
     return (
       <div>
-        Hangouts
+        Trips
       </div>
     )
   }
 }
 
-export default HangoutsContainer
+export default TripsContainer

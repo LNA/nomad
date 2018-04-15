@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import './App.css';
-import HangoutsContainer from './components/HangoutsContainer'
+import TripsContainer from './components/TripsContainer'
 
 
 class App extends Component {
@@ -10,7 +10,7 @@ class App extends Component {
         <div className="App-header">
           <h1>Nomad</h1>
         </div>
-        <HangoutsContainer />
+        <TripsContainer />
       </div>
     );
   }
